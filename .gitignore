@@ -1,9 +1,18 @@
+# latex
 *.toc
 *.aux
 *.fdb_latexmk
 *.fls
 *.log
 *.gz
-**/.DS_Store
+*.out
+*.syntex
+
+# python
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
+# other
+**/.DS_Store
+*/main*
+
