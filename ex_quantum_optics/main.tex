@@ -1,0 +1,255 @@
+\documentclass[14pt,a4paper]{article}
+\usepackage[warn]{mathtext}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+
+\usepackage[english,russian]{babel}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{floatflt}
+\usepackage{pdfpages}
+\usepackage{geometry} \geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=1.5cm,rmargin=1.5cm}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{epsfig}
+\usepackage{newunicodechar}
+\newcommand{\angstrom}{\textup{\AA}}
+
+\usepackage{indentfirst}
+\usepackage{misccorr}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{lscape}
+\usepackage{hvfloat}
+\usepackage{amsfonts}
+\usepackage{euscript}
+\usepackage{textcomp}
+\usepackage{mathtext}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage[version =3]{mhchem}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{fancyhdr}
+\usepackage[normalem]{ulem}
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+\definecolor{linkcolor}{HTML}{000BFF} % цвет ссылок
+\definecolor{urlcolor}{HTML}{000BFF} % цвет гиперссылок
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+		МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ РОССИЙСКОЙ ФЕДЕРАЦИИ\\
+		\vspace{0.5cm}
+		\footnotesize{\Large{МОСКОВСКИЙ ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ}}\\
+		\vspace{0.15cm}
+		\footnotesize{\Large{национальный исследовательский университет}}\\
+		\vspace{6cm}
+		{\LARGE
+		\textbf{Задачи по курсу}}\\
+		\large{\textit{квантовая оптика}}\\
+		\vspace{8cm}
+		\begin{flushright}
+			Выполнил\\
+			студент 855 группы\\
+			ФФКЭ МФТИ\\
+			Атепалихин Артемий Алексеевич
+		\end{flushright}
+		\vfill
+		Долгопрудный\\
+		\the\year\:
+		\end{center}
+	\end{titlepage}
+	
+	\pagestyle{fancy} 
+    \fancyhead[L]{Атепалихин АА}
+    \fancyhead[C]{квантовая оптика}
+    \fancyhead[R]{\textit{задачи}}
+    \fancyfoot[C]{ \noindent\rule{\textwidth}{0.4pt} \thepage }
+	
+	\newpage
+	
+	\pagenumbering{arabic}
+
+\section*{Задача 1}
+    
+    \par \textsf{Найти длины волн (мкм), частоты (Гц) и энергии(эВ) для 7 цветов диапазона,}\\
+    \par \textsf{видимого глазом человека излучения.}\\
+    
+    \par 
+        \begin{enumerate}
+            \item \textcolor[rgb]{1, 0, 0}{Красный}\\
+            длина волны {$\lambda$}: 690 нм\\
+            частота {$\nu$}: {$4,35 \cdot 10^{14}$} Гц\\
+            энергия {$\hbar \omega$}: 1,8 эВ
+            \item \textcolor[rgb]{1, 0.65, 0}{Оранжевый}\\
+            длина волны {$\lambda$}: 610 нм\\
+            частота {$\nu$}: {$5,00 \cdot 10^{14}$} Гц\\
+            энергия {$\hbar \omega$}: 2,0 эВ
+            \item \textcolor[rgb]{1, 1, 0}{Жёлтый}\\
+            длина волны {$\lambda$}: 580 нм\\
+            частота {$\nu$}: {$5,02 \cdot 10^{14}$} Гц\\
+            энергия {$\hbar \omega$}: 2,1 эВ
+            \item \textcolor[rgb]{0, 1, 0}{Зелёный}\\
+            длина волны {$\lambda$}: 530 нм\\
+            частота {$\nu$}: {$5,70 \cdot 10^{14}$} Гц\\
+            энергия {$\hbar \omega$}: 2,3 эВ
+            \item \textcolor[rgb]{0, 0.75, 1}{Голубой}\\
+            длина волны {$\lambda$}: 490 нм\\
+            частота {$\nu$}: {$6,12 \cdot 10^{14}$} Гц\\
+            энергия {$\hbar \omega$}: 2,5 эВ
+            \item \textcolor[rgb]{0, 0, 1}{Синий}\\
+            длина волны {$\lambda$}: 460 нм\\
+            частота {$\nu$}: {$6,52 \cdot 10^{14}$} Гц\\
+            энергия {$\hbar \omega$}: 2,7 эВ
+            \item \textcolor[rgb]{0.6, 0, 1}{Фиолетовый}\\
+            длина волны {$\lambda$}: 420 нм\\
+            частота {$\nu$}: {$7,10 \cdot 10^{14}$} Гц\\
+            энергия {$\hbar \omega$}: 3,0 эВ
+        \end{enumerate}
+
+\vspace{0.8cm}
+
+\section*{Задача 2}
+    
+    \par \textsf{Найти {$\lambda_m$} для АЧТ при t = $40^{\circ}$ C и $t = 6000^{\circ}$ C.}\\ 
+    \par \textsf{Почему основной цвет растительности на Земле зеленый?}\\
+    
+    \par из закона Вина: {$\lambda_m = \frac{2900}{T}$}\\
+    
+    \par {$T_1 = 313$} K, {$T_2 = 6273$} K {$\longmapsto \lambda_{m_1} = 927$} нм, {$\lambda_{m_2} = 460$} нм\\
+    
+    \par растениям более эернетически выгодно отражать именно зелёный и сине-зелёный свет,\\
+    \par посколько пик излучения Солнца как раз приблизительно 460-490 нм.
+
+\vspace{1cm}
+
+\section*{Задача 3}
+    
+    \par \textsf{Оценить суммарную мощность излучения (Вт), испускаемую Вами при нормальной температуре (t = $36,6^{\circ}$ C)}\\
+    \par \textsf{и в состоянии болезни (t = $42^{\circ}$ C).}\\
+
+    \par
+    
+\section*{Задача 4}
+    
+    \par \textsf{При классическом представлении Э-М поля, при какой его плоской поляризации}\\
+    \par \textsf{(в плоскости падения или перпендикулярно ей) выход фотоэлектронов будет больше при всех равных}\\
+    \par \textsf{других параметров излучения и фотокатода.}\\
+    
+    \par
+    
+\section*{Задача 5}
+    
+    \par \textsf{Определите красную длину волны фотоэффекта на алюминиевом фотокатоде, найдя его работу выхода. }\\
+    \par \textsf{Найдите {$E_{MAX}$} фотоэлектрона, выбитого из алюминиевого фотокатода 4-ой гармоникой лазера на неодиме.}\\
+    
+    \par 
+
+\section*{Задача 6}
+    
+    \par \textsf{Постройте линейную функцию запирающего потенциала от частоты}\\
+    \par \textsf{падающего на фотокатод излучения {$U_{\hbox{зап}} = kV + b$}.}\\
+    \par \textsf{Выразите k и b через константы и параметры фотокатода и покажите их на графике.}\\
+    
+    \par 
+
+\section*{Задача 7}
+    
+    \par \textsf{Покажите, что поглощение / излучение свободного фотона свободным электроном - }\\
+    \par \textsf{процесс, запрещенный законами сохранения.}\\
+    
+    \par 
+
+\section*{Задача 8}
+    
+    \par \textsf{Определите изменение длины волны излучения при рассеянии его на пучке встречных релятивистских электронов,}\\
+    \par \textsf{считая, что в результате неупругого столкновения с фотоном электрон часть своей кинетической энергии}\\
+    \par \textsf{передал фотону, который отразился назад от релятивистского зеркала налетающих электронов.}\\
+    \par \textit{Такой эффект получил название обратного комптон-эффекта. Именно обратным комптон-эффектом}\\
+    \par \textit{удается, в частности, объяснить рентгеновское излучение космических объектов,}\\
+    \par \textit{ и так на заре лазерной физики хотели получить рентгеновское лазерное излучение.}\\
+    
+    \par 
+
+\section*{Задача 9}
+    
+    \par \textsf{Найдите и запишите выражения для вариационного принципа Ферма для оптики и вариационного принципа}\\
+    \par \textsf{Мопертюи-Лагранжа для механики массовой частицы. Сравните их и попробуйте найти аналогии.}\\
+    
+    \par 
+
+\section*{Задача 10}
+    
+    \par \textsf{Выпишите выражение для физической величины \textsc{действие} (S).}\\
+    \par \textsf{Найдите ее размерность и сравните с размерностью постоянной Планка h.}\\
+    \par \textsf{Запишите фазу плоской волны и фазу волновой функции через S/ h и сравните их временные}\\
+    \par \textsf{и пространственные части.}\\
+    
+    \par 
+
+\section*{Задача 11}
+    
+    \par \textsf{Как по картинке миража понять на юге или на севере это происходит?}\\
+    
+    \par 
+
+\section*{Задача 12}
+    
+    \par \textsf{Оцените период кристаллической решетки никеля, если дифракционная картина типа Лауэ или Брега}\\
+    \par \textsf{происходит с электронами, разогнанными разностью потенциалов в 150 эВ.}\\
+    
+    \par 
+
+\section*{Задача 13}
+    
+    \par \textsf{Вычислить спектральное фурье - преобразование от функция временной когерентности}\\
+    
+    \par 
+
+\section*{Задача 14}
+    
+    \par \textsf{Найти выражение для аксиальных мод пустого резонатора и константу из предыдущего равенства}\\
+    \par \textsf{для пустого резонатора длины L.}\\
+    
+    \par 
+
+\section*{Задача 15}
+    
+    \par \textsf{Оценить длину продольной когерентности излучения АЧТ в
+длинах волн для комнатной температуры}\\
+    \par \textsf{и для температуры короны Солнца.}\\
+    
+    \par 
+
+\section*{Задача 16}
+    
+    \par \textsf{Оценить плотность мощности излучения, создаваемую
+лазером на АИГ + Nd , имеющего диаметр}\\
+    \par \textsf{выходной диафрагмы 2 мм и мощность импульса 100мДж на мишени на расстоянии 5 км.}\\
+    
+    \par 
+
+\section*{Задача 17}
+    
+    \par \textsf{Найти температуру АЧТ, при которой параметр вырождения его излучения равен единице в видимом диапазоне.}\\
+    
+    \par 
+
+
+
+\end{document}
